@@ -1,0 +1,89 @@
+:root {
+    --border: 1px solid black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    position: relative;
+    padding: 15px 5px 0 5px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.box-interior {
+    background-color: floralwhite;
+    border: var(--border);
+    margin: 0 10px 20px 10px;
+    padding: 3px;
+    text-align: justify;
+    position: relative;
+}
+
+.box-interior h3 {
+    width: 150px;
+    border-left: var(--border);
+    border-bottom: var(--border);
+    text-align: center;
+
+    /*Position*/
+    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#box1 h3 {
+    background-color: darksalmon;
+}
+
+#box2 h3 {
+    background-color: coral;
+}
+
+#box3 h3 {
+    background-color: indianred;
+}
+
+.row {
+    width: 100%;
+}
+
+/********** Desktop only **********/
+@media (width >= 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/********** Tablets only **********/
+@media (768px <= width <= 991px) {
+    .col-md-12, .col-md-6 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/********** Mobile only **********/
+@media (width <= 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
